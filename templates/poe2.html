@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block title %}Home - POE Item Design{% endblock %}
+
+{% block content %}
+
+<h1 class="center wh_01">{{ mainTitle }} : POE2</h1>
+<p class="center no-wrap">
+    {{ image_hightlight_text }}
+</p>
+<div class="grid-4xN">
+    {% for card in cards %}
+    <div class="card">
+        <a href="{{ url_for('static', filename=card.image) }}" data-lightbox="card-gallery"
+        data-title-template="Gameplay : <br> {{ card.GameplayText|e }} <br> Flavor :{{ card.FlavorText|e }}">
+            <img src="{{ url_for('static', filename=card.image) }}" alt="Card Image">
+        </a>
+        <div class="title">{{ card.IntentionTitle }}</div>
+        <div class="description">{{ card.GameplayText|safe }}</div>
+        <div class="title">{{ card.FlavorTitle }}</div>
+        <div class="description">{{ card.FlavorText|safe }}</div>
+    </div>
+    {% endfor %}
+</div>
+
+<script src="{{ url_for('static', filename='js/lightbox-plus-jquery.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/custom.js') }}"></script>
+
+{% endblock %}

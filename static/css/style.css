@@ -1,0 +1,182 @@
+/* #region base */
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    color : #88765c;
+}
+
+h1 {
+    color : #dfcf99;
+    font-size: 3em;
+}
+
+h2 {
+    color : #dfcf99;
+    font-size: 2.5em;
+}
+
+a {
+    color : #cdc462;
+}
+
+/* #endregion */
+
+/* #region card */
+.card {
+    border: 1px solid #734e32; /* #ccc */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    margin: 16px;
+    max-width: 300px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card img {
+    border-radius: 8px;
+    max-width: 100%;
+    height: auto;
+}
+
+.card .title {
+    font-size: 1.5em;
+    margin: 8px 0;
+    color: #dfcf99;
+}
+
+.card .description {
+    font-size: 1em;
+    color: #88765c;
+}
+
+/* #endregion */
+
+/* #region NavBar */
+
+.navbar {
+    background-color: #2c2c2c;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    gap: 1.5em;
+}
+
+.navbar a {
+    color: #dfcf99;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+/* #endregion */
+
+.center {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.grid-4xN {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    padding: 16px;
+    justify-items: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+}
+
+.no-wrap {
+    white-space: nowrap;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.margin_01 {
+    margin-left: 5%;
+}
+
+.fontSize_01 {
+    font-size: 1.5em;
+}
+
+.wh_01 {
+    height: 10vh;
+}
+
+.wh_02 {
+    height: 5vh;
+}
+
+/*#region Colors*/
+
+.color_darkExile {
+    color: #0f0f0f;
+}
+
+.color_lightExile {
+    color: #dfcf99;
+}
+
+.color_progExile {
+    color: #88765c;
+}
+
+.color_blueExile {
+    color: #3e3e74;
+}
+
+.color_panelExile {
+    color: #734e32;
+}
+
+.color_infoExile {
+    color: #242521;
+}
+
+.color_linkExile {
+    color: #cdc462;
+}
+
+.bgColor_darkExile {
+    background-color: #0f0f0f;
+}
+
+.bgColor_lightExile {
+    background-color: #dfcf99;
+}
+
+.bgColor_progExile {
+    background-color: #88765c;
+}
+
+.bgColor_blueExile {
+    background-color: #3e3e74;
+}
+
+.bgColor_panelExile {
+    background-color: #734e32;
+}
+
+.bgColor_infoExile {
+    background-color: #242521;
+}
+
+.bgColor_linkExile {
+    background-color: #cdc462;
+}
+
+/*#endregion*/

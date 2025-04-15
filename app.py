@@ -71,7 +71,7 @@ def poe1():
             'image': 'images/POE_Item_12_FailedExperiment.png',
             'GameplayText': 'I think that experience orbs feel really good and give movement a new dimension. <br> <br>'
                             'I also wanted to create an experience strategy where generating more experience would result in getting more items.',
-            'FlavorText': '',
+            'FlavorText': 'Insipired by the <a href="https://warhammer40k.fandom.com/wiki/Orks" target=_blank>Orks</a> from Warhammer 40K',
         },
         {
             'image': 'images/POE_Item_13_TheThird.png',
